@@ -1,0 +1,26 @@
+{
+  "name": "livechat-socket",
+  "version": "1.0.0",
+  "description": "Live chat using socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohwildanhabibi/livechat-socket.git"
+  },
+  "keywords": [
+    "livchat"
+  ],
+  "author": "wildan habibi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohwildanhabibi/livechat-socket/issues"
+  },
+  "homepage": "https://github.com/mohwildanhabibi/livechat-socket#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4"
+  }
+}
