@@ -20,10 +20,10 @@
     <form id="form" action="">
       <input id="input" autocomplete="off" /><button>Send</button>
     </form>
-    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <script src="https://wildan-chat.netlify.app:3000/socket.io/socket.io.js"></script>
 
     <script>
-      var socket = io("https://wildan-chat.netlify.app");
+      var socket = io("https://wildan-chat.netlify.app:3000");
 
       var messages = document.getElementById('messages');
       var form = document.getElementById('form');
