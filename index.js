@@ -1,7 +1,12 @@
 const app = require('express')();
-const http = require('http').Server(app);
+const http = require('http').Server(app, {
+  allowRequest: (req, callback) => {
+    const noOriginHeader = req.headers.origin === undefined;
+    callback(null, noOriginHeader);
+  }
+});
 const io = require('socket.io')(http);
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
