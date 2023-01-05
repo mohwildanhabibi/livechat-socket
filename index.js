@@ -1,8 +1,7 @@
 const app = require('express')();
 const http = require('http').Server(app, {
-  allowRequest: (req, callback) => {
-    const noOriginHeader = req.headers.origin === undefined;
-    callback(null, noOriginHeader);
+  cors: {
+    origin: '*',
   }
 });
 const io = require('socket.io')(http);
